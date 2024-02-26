@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #ffc107;
+  --secondary-color: #282c34;
+  --dark-bg: #333;
+  --dark-secondary: #444;
+  --light-text: #fff;
+  --hover-color: #ffc107;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--light-text);
+}
+
+.App-link {
+  color: var(--primary-color);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+.dark-mode .card {
+  background-color: var(--dark-secondary);
+}
+
+.hover-button {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hover-button:hover {
+  background-color: var(--hover-color);
+  color: var(--dark-bg);
+}
+
+.hover-input {
+  transition: box-shadow 0.3s;
+}
+
+.hover-input:hover {
+  box-shadow: 0 0 10px var(--hover-color);
+}
+
+.blur-background {
+  filter: blur(5px);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.pagination-button:hover {
+  background-color: #e0e0e0;
+}
+
+.pagination-button.active {
+  background-color: #d0d0d0;
+  font-weight: bold;
+}
+
+body {
+  padding-top: 150px; 
+}
